@@ -14,7 +14,7 @@ except ModuleNotFoundError:
     import google.generativeai as genai # Try importing again after installation
 
 # Set up Gemini API key
-GENAI_API_KEY = "AIzaSyDigqRDcAoMsUim11RoBs5cpFT2wO14unY"  # Replace with your actual API key
+GENAI_API_KEY = "Your API key"  # Replace with your actual API key
 genai.configure(api_key=GENAI_API_KEY)
 
 class ChatbotGUIai:
@@ -73,3 +73,4 @@ class ChatbotGUIai:
         self.chat_display.insert(tk.END, message)
         self.chat_display.config(state=tk.DISABLED)
         self.chat_display.yview(tk.END)
+
