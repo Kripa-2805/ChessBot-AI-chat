@@ -5,7 +5,7 @@ import chess  #board
 import chess.engine #stockfish
 from ai import ChatbotGUIai  #Import chatbot
 
-STOCKFISH_PATH = r"C:\Users\kushi\OneDrive\Desktop\BOT\stockfish-windows-x86-64-avx2\stockfish\stockfish-windows-x86-64-avx2.exe"  
+STOCKFISH_PATH = r"location of - stockfish-windows-x86-64-avx2\stockfish\stockfish-windows-x86-64-avx2.exe"  
 
 #check if stock is not there
 if not os.path.exists(STOCKFISH_PATH):
@@ -125,5 +125,6 @@ if __name__ == "__main__":
     app = ChessBotGUI(root) 
     root.protocol("WM_DELETE_WINDOW", app.close_engine) 
     root.mainloop()
+
 
 
